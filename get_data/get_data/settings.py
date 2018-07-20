@@ -58,10 +58,11 @@ ROBOTSTXT_OBEY = False
 
 # Enable or disable extensions
 # See https://doc.scrapy.org/en/latest/topics/extensions.html
-#EXTENSIONS = {
-#    'scrapy.extensions.telnet.TelnetConsole': None,
-#}
-
+EXTENSIONS = {
+   'scrapy.extensions.telnet.TelnetConsole': None,
+   'scrapy.extensions.closespider.CloseSpider': 1
+}
+CLOSESPIDER_ERRORCOUNT = 1
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {

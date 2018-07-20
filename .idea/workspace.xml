@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be45de6a-c485-4034-9983-49b9601d2e60" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/analyze_draw.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/check_data_corret.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/get_data/get_data/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_data/get_data/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/get_data/get_data/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_data/get_data/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/get_data/get_data/spiders/Germany.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_data/get_data/spiders/Germany.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/get_data_Germany.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,52 +18,33 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/soccer_bet$analyze_draw.coverage" NAME="analyze_draw Coverage Results" MODIFIED="1532114449735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/soccer_bet$get_data_Germany.coverage" NAME="get_data_Germany Coverage Results" MODIFIED="1531950734226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/soccer_bet$analyze_win.coverage" NAME="analyze_win Coverage Results" MODIFIED="1531954409447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/soccer_bet$check_data_corret.coverage" NAME="check_data_corret Coverage Results" MODIFIED="1532124911865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/soccer_bet$bet_Germany.coverage" NAME="bet_Germany Coverage Results" MODIFIED="1531855756825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="null/Germany/Saiji1718" pinned="false" current-in-tab="false">
-        <entry file="mongo://null/Germany/Saiji1718">
-          <provider selected="true" editor-type-id="MongoData" />
-        </entry>
-      </file>
-      <file leaf-file-name="get_data_Germany.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/get_data_Germany.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="items.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/get_data/get_data/items.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/get_data/get_data/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="72" column="21" selection-start-line="72" selection-start-column="21" selection-end-line="72" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Germany.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/get_data/get_data/spiders/Germany.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+            <state relative-caret-position="1">
+              <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
               </folding>
@@ -65,14 +52,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/get_data/get_data/pipelines.py">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/get_data/get_data/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-              <folding>
-                <element signature="e#193#207#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="205">
+              <caret line="69" column="1" lean-forward="true" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="items.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/get_data/get_data/items.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="check_data_corret.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/check_data_corret.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -92,12 +94,15 @@
       <find>info</find>
       <find>i</find>
       <find>Field</find>
+      <find>威廉希尔</find>
+      <find>William</find>
     </findStrings>
     <replaceStrings>
       <replace>data</replace>
       <replace>item</replace>
       <replace>response.meta</replace>
       <replace>scrapy.Field</replace>
+      <replace>Bet365</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -107,11 +112,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/bet_Germany.py" />
-        <option value="$PROJECT_DIR$/analyze_win.py" />
         <option value="$PROJECT_DIR$/get_data_Germany.py" />
-        <option value="$PROJECT_DIR$/get_data/get_data/items.py" />
-        <option value="$PROJECT_DIR$/get_data/get_data/settings.py" />
         <option value="$PROJECT_DIR$/get_data/get_data/pipelines.py" />
+        <option value="$PROJECT_DIR$/analyze_win.py" />
+        <option value="$PROJECT_DIR$/analyze_draw.py" />
+        <option value="$PROJECT_DIR$/get_data/get_data/items.py" />
+        <option value="$PROJECT_DIR$/check_data_corret.py" />
+        <option value="$PROJECT_DIR$/get_data/get_data/settings.py" />
         <option value="$PROJECT_DIR$/get_data/get_data/spiders/Germany.py" />
       </list>
     </option>
@@ -155,6 +162,13 @@
               <item name="get_data" type="462c0819:PsiDirectoryNode" />
               <item name="get_data" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="soccer_bet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="soccer_bet" type="462c0819:PsiDirectoryNode" />
+              <item name="get_data" type="462c0819:PsiDirectoryNode" />
+              <item name="get_data" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -180,7 +194,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.analyze_win">
+  <component name="RunManager" selected="Python.check_data_corret">
+    <configuration name="analyze_draw" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="soccer_bet" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/analyze_draw.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="analyze_win" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="soccer_bet" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -219,6 +252,25 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="check_data_corret" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="soccer_bet" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/check_data_corret.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="get_data_Germany" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="soccer_bet" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -242,9 +294,13 @@
       <item itemvalue="Python.bet_Germany" />
       <item itemvalue="Python.get_data_Germany" />
       <item itemvalue="Python.analyze_win" />
+      <item itemvalue="Python.analyze_draw" />
+      <item itemvalue="Python.check_data_corret" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.check_data_corret" />
+        <item itemvalue="Python.analyze_draw" />
         <item itemvalue="Python.analyze_win" />
         <item itemvalue="Python.get_data_Germany" />
         <item itemvalue="Python.bet_Germany" />
@@ -280,14 +336,14 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32967034" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32967034" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32967034" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32967034" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32967034" />
       <window_info anchor="right" id="Mongo Explorer" order="3" weight="0.33946982" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32967034" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32967034" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2496318" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Database" order="3" weight="0.3298969" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" auto_hide="true" x="0" y="23" width="1440" height="800" id="SciView" order="3" show_stripe_button="false" type="FLOATING" weight="0.3298969" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -373,28 +429,11 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/analyze_win.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="75" column="9" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/get_data/get_data/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/get_data/scrapy.cfg">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/get_data/get_data/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="72" column="21" selection-start-line="72" selection-start-column="21" selection-end-line="72" selection-end-column="21" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/get_data_Germany.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -416,17 +455,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/get_data_England.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/analyze_win.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="64" selection-start-line="64" selection-end-line="67" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/analyze_draw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="12" selection-end-column="14" />
+          <folding>
+            <element signature="e#12#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-199">
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/check_data_corret.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/get_data/get_data/items.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        <state relative-caret-position="260">
+          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_data/get_data/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="69" column="1" lean-forward="true" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/get_data/get_data/spiders/Germany.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+        <state relative-caret-position="1">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
           </folding>
