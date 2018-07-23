@@ -73,3 +73,23 @@ class GetDataItem(scrapy.Item):
     kaili_win_final_Bet365  = scrapy.Field()
     kaili_draw_final_Bet365  = scrapy.Field()
     kaili_lose_final_Bet365  = scrapy.Field()
+
+class dailyDataItem(scrapy.Item):
+    hname = scrapy.Field()
+    gname = scrapy.Field()
+
+    hscore = scrapy.Field()
+    gscore = scrapy.Field()
+
+    date = scrapy.Field()
+
+    time = scrapy.Field()
+
+    peilv_win_start_Bet365 = scrapy.Field()
+    peilv_draw_start_Bet365  = scrapy.Field()
+    peilv_lose_start_Bet365  = scrapy.Field()
+
+    #临盘_Bet365
+    peilv_win_final_Bet365  = scrapy.Field()
+    peilv_draw_final_Bet365  = scrapy.Field()
+    peilv_lose_final_Bet365  = scrapy.Field()

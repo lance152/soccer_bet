@@ -1,11 +1,10 @@
 #分析全压平局的胜率
-from time import sleep
 
 from pymongo import MongoClient
 import statistics
 
 MONEY = 100
-saiji_list = [1718,1617,1516,1415,1314,1213]
+
 def initilize_db():
     Client = MongoClient()
     db = Client['info']
@@ -19,11 +18,11 @@ def get_games(saiji,round,col):
 
 def get_result(game):
     if game['hscore'] > game['gscore']:
-        return 3
+        return game['peilv_win_final_Bet365']
     elif game['hscore'] < game['gscore']:
-        return 0
+        return game['peilv_lose_final_Bet365']
     else:
-        return 1
+        return game['peilv_draw_final_Bet365']
 
 def isDrawHighOdds(odd):
     #if game['peilv_draw_final_Bet365'] > 2.618:
@@ -52,7 +51,7 @@ def run(saiji):
     counts = []
     bingos = []
     money = MONEY
-    money_flow = [money]
+    money_flow = []
     total_odds = []
     total_bet = []
     n = 1
@@ -69,7 +68,9 @@ def run(saiji):
             guest = g['gname']
             print('开始分析 ' + host + ' 对阵 ' + guest + ' 的比赛')
             result = get_result(g)
-            odd = g['peilv_draw_final_Bet365']
+            odd_list = [g['peilv_win_final_Bet365'],g['peilv_draw_final_Bet365'],
+                        g['peilv_lose_final_Bet365']]
+            odd = max(odd_list)
             #odd = g['peilv_draw_start_Bet365']
             #odd = g['peilv_draw_final_William']
 
@@ -79,14 +80,14 @@ def run(saiji):
                 total_odds.append(odd)
                 total_bet.append(round_bet)
 
-            if result == 1:
+            if result == odd:
                 round_count += 1
                 money += round(round_bet*odd,2)
                 odds.append(odd)
 
         print('本轮下注次数： ' + str(round_bingo))
         print('本轮猜中次数： ' + str(round_count))
-        print('本轮剩余资金： ' + str(round(money,2)))
+        print('本轮剩余资金： ' + str(money))
         print('本轮下注额： ' + str(round_bet))
         print('本轮赔率： ' + str(odds))
         if round_bingo != 0:
@@ -98,20 +99,19 @@ def run(saiji):
         money_flow.append(money)
         print('完成分析第 ' + str(i) + ' 轮')
         print('*'*20)
-
-        # if money < MONEY:
-        #     n += 1
+        if money < MONEY:
+            n += 1
         # else:
         #     n -= 2
         #     if n < 1:
         #         n = 1
-        if money > MONEY:
-            n -= 2
-            if n < 1:
-                n = 1
-        n += 1
+        # if money > MONEY:
+        #     n -= 2
+        #     if n < 1:
+        #         n = 1
+        # else:
+        #     n += 1
 
-    print(str(saiji) + ' 赛季数据')
     print('总胜率： ' + str(round(sum(counts)/sum(bingos),2)))
     print('总下注场数： ' + str(sum(bingos)))
     print('总猜中场数： ' + str(sum(counts)))
@@ -122,9 +122,5 @@ def run(saiji):
     print(money_flow)
 
 if __name__ == '__main__':
-    # saiji = input('输入欲分析的赛季： ')
-    # run(float(saiji))
-
-    for i in saiji_list:
-        run(i)
-        sleep(10)
+    saiji = input('输入欲分析的赛季： ')
+    run(float(saiji))

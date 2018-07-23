@@ -3,6 +3,7 @@ import scrapy
 from scrapy.http import Request
 import json
 from get_data.items import GetDataItem
+from get_data.spiders.processData import get_inside
 
 class GermanySpider(scrapy.Spider):
     name = 'Germany'
@@ -10,6 +11,13 @@ class GermanySpider(scrapy.Spider):
     saiji_list = [11826, 10077, 8739, 7479, 6830, 6135]
     #saiji_list = [6135]
     saiji_name = [1718, 1617, 1516, 1415, 1314, 1213]
+
+    custom_settings = {
+        'ITEM_PIPELINES': {
+            'get_data.pipelines.GetDataPipeline': 1
+        }
+    }
+
     def start_requests(self):
         for i in self.saiji_list:
             for j in range(1,35):
@@ -78,40 +86,6 @@ class GermanySpider(scrapy.Spider):
 
         return item
         #print(item)
-
-def get_inside(cata,company_list,response,item):
-    for company in company_list:
-        id = company_list[company]
-        if cata == 'kaili':
-            td = 6
-        elif cata == 'peilv':
-            td = 3
-        elif cata == 'fanli':
-            td = 5
-        odds_start = response.xpath('//*[@id="%s"]/td[%s]/table/tbody/tr[1]/td/text()' % (id, td)).extract()
-        odds_final = response.xpath('//*[@id="%s"]/td[%s]/table/tbody/tr[2]/td/text()' % (id, td)).extract()
-        process_data(odds_start, item, cata, 'start', company)
-        process_data(odds_final, item, cata, 'final', company)
-
-def process_data(odds,item,cata,time,company):
-    if len(odds)==3:
-        odds = [x.strip() for x in odds]
-        odds = list(map(float, odds))
-        item['%s_win_%s_%s' % (cata,time,company)] = odds[0]
-        item['%s_draw_%s_%s' % (cata,time,company)] = odds[1]
-        item['%s_lose_%s_%s' % (cata,time,company)] = odds[2]
-    elif len(odds)==0:
-        if cata == 'fanli':
-            item['fanli_%s_%s' % (time, company)] = 0
-        else:
-            item['%s_win_%s_%s' % (cata,time,company)] = 0
-            item['%s_draw_%s_%s' % (cata,time,company)] = 0
-            item['%s_lose_%s_%s' % (cata,time,company)] = 0
-
-    elif len(odds)==1:
-        odds = [x.replace('%', '') for x in odds]
-        odds = list(map(float, odds))
-        item['%s_%s_%s' % (cata, time,company)] = odds[0]
 
 # def set_kaili(cata,company,response,item):
 #     if company == 'William' and cata == 'start':

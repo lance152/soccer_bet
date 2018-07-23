@@ -65,9 +65,10 @@ EXTENSIONS = {
 CLOSESPIDER_ERRORCOUNT = 1
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-ITEM_PIPELINES = {
-   'get_data.pipelines.GetDataPipeline': 300,
-}
+# ITEM_PIPELINES = {
+#    'get_data.pipelines.GetDataPipeline': 1,
+#    'get_data.pipelines.DailyDataPipeline': 1
+# }
 MONGO_HOST = "127.0.0.1"  # 主机IP
 MONGO_PORT = 27017  # 端口号
 MONGO_DB = "info"  # 库名
