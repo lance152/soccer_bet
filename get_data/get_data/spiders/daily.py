@@ -8,11 +8,11 @@ class DailySpider(scrapy.Spider):
     name = 'daily'
     allowed_domains = ['500.com']
 
-    custom_settings = {
-        'ITEM_PIPELINES': {
-            'get_data.pipelines.DailyDataPipeline': 1
-        }
-    }
+    # custom_settings = {
+    #     'ITEM_PIPELINES': {
+    #         'get_data.pipelines.DailyDataPipeline': 1
+    #     }
+    # }
     def start_requests(self):
 
         for i in range(1,23):

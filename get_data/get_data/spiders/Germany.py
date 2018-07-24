@@ -2,21 +2,23 @@
 import scrapy
 from scrapy.http import Request
 import json
-from get_data.items import GetDataItem
+from get_data.items import getCoarseData
 from get_data.spiders.processData import get_inside
 
 class GermanySpider(scrapy.Spider):
     name = 'Germany'
     allowed_domains = ['500.com']
-    saiji_list = [11826, 10077, 8739, 7479, 6830, 6135]
-    #saiji_list = [6135]
-    saiji_name = [1718, 1617, 1516, 1415, 1314, 1213]
+    saiji_list = [11826, 10077, 8739, 7479, 6830, 6135, 5438, 4820, 4070, 3308, 2652, 970, 841, 646, 290, 533, 242, 186]
 
-    custom_settings = {
-        'ITEM_PIPELINES': {
-            'get_data.pipelines.GetDataPipeline': 1
-        }
-    }
+    #saiji_list = [6135]
+    saiji_name = ['1718', '1617', '1516', '1415', '1314', '1213', '1112', '1011', '0910', '0809', '0708', '0607', '0506', '0405',
+     '0304', '0203', '0102', '0001']
+
+    # custom_settings = {
+    #     'ITEM_PIPELINES': {
+    #         'get_data.pipelines.GetDataPipeline': 1
+    #     }
+    # }
 
     def start_requests(self):
         for i in self.saiji_list:
@@ -42,7 +44,7 @@ class GermanySpider(scrapy.Spider):
             yield Request(url=url,callback=self.get_kaili,meta=info)
 
     def get_kaili(self,response):
-        item = GetDataItem()
+        item = getCoarseData()
         # item['round'] = response.meta['round']
         # item['saiji'] = response.meta['saiji']
         # item['hscore'] = response.meta['hscore']
@@ -57,32 +59,33 @@ class GermanySpider(scrapy.Spider):
                 item[key] = response.meta[key]
                 i += 1
 
-        company_list = {'William':293,'Bet365':3}
-        #odds = response.xpath('//*[@id="293"]/td[6]/table/tbody/tr[1]/td/text()').extract()
-        # set_kaili('start','William',response,item)
-        # set_kaili('start', 'Bet365', response, item)
-        get_inside('kaili',company_list,response,item)
-        #odds = response.xpath('//*[@id="293"]/td[6]/table/tbody/tr[2]/td/text()').extract()
-        # set_kaili('final','William',response,item)
-        # set_kaili('final','Bet365',response,item)
-
-        #odds = response.xpath('//*[@id="293"]/td[3]/table/tbody/tr[1]/td/text()').extract()
-        # set_peilv('start', 'William', response, item)
-        # set_peilv('start', 'Bet365', response, item)
+        #company_list = {'William':293,'Bet365':3}
+        company_list = {'Bet365':3}
+        # #odds = response.xpath('//*[@id="293"]/td[6]/table/tbody/tr[1]/td/text()').extract()
+        # # set_kaili('start','William',response,item)
+        # # set_kaili('start', 'Bet365', response, item)
+        # get_inside('kaili',company_list,response,item)
+        # #odds = response.xpath('//*[@id="293"]/td[6]/table/tbody/tr[2]/td/text()').extract()
+        # # set_kaili('final','William',response,item)
+        # # set_kaili('final','Bet365',response,item)
+        #
+        # #odds = response.xpath('//*[@id="293"]/td[3]/table/tbody/tr[1]/td/text()').extract()
+        # # set_peilv('start', 'William', response, item)
+        # # set_peilv('start', 'Bet365', response, item)
         get_inside('peilv',company_list,response,item)
-
-        #odds = response.xpath('//*[@id="293"]/td[3]/table/tbody/tr[2]/td/text()').extract()
-        # set_peilv('final', 'William', response, item)
-        # set_peilv('final', 'Bet365', response, item)
-
-        #fanli = response.xpath('//*[@id="293"]/td[5]/table/tbody/tr[1]/td/text()').extract()
-        # set_fanli('start','William',response,item)
-        # set_fanli('start','Bet365',response,item)
-        get_inside('fanli',company_list,response,item)
-
-        #fanli = response.xpath('//*[@id="293"]/td[5]/table/tbody/tr[2]/td/text()').extract()
-        # set_fanli('final', 'William', response, item)
-        # set_fanli('final','Bet365',response,item)
+        #
+        # #odds = response.xpath('//*[@id="293"]/td[3]/table/tbody/tr[2]/td/text()').extract()
+        # # set_peilv('final', 'William', response, item)
+        # # set_peilv('final', 'Bet365', response, item)
+        #
+        # #fanli = response.xpath('//*[@id="293"]/td[5]/table/tbody/tr[1]/td/text()').extract()
+        # # set_fanli('start','William',response,item)
+        # # set_fanli('start','Bet365',response,item)
+        # get_inside('fanli',company_list,response,item)
+        #
+        # #fanli = response.xpath('//*[@id="293"]/td[5]/table/tbody/tr[2]/td/text()').extract()
+        # # set_fanli('final', 'William', response, item)
+        # # set_fanli('final','Bet365',response,item)
 
         return item
         #print(item)
