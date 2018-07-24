@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be45de6a-c485-4034-9983-49b9601d2e60" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analyze_draw.py" beforeDir="false" afterPath="$PROJECT_DIR$/analyze_draw.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analyze_win.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/check_data_corret.py" beforeDir="false" afterPath="$PROJECT_DIR$/check_data_corret.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_data/get_data/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_data/get_data/items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_data/get_data/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_data/get_data/pipelines.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_data/get_data/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_data/get_data/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_data/get_data/spiders/Germany.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_data/get_data/spiders/Germany.py" afterDir="false" />
-    </list>
+    <list default="true" id="be45de6a-c485-4034-9983-49b9601d2e60" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,90 +34,70 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="Germany.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/get_data/get_data/spiders/Germany.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="311">
-                  <caret line="35" column="45" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="45" />
-                  <folding>
-                    <element signature="e#24#37#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="daily.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/get_data/get_data/spiders/daily.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="123">
-                  <caret line="21" column="72" selection-start-line="21" selection-start-column="72" selection-end-line="21" selection-end-column="72" />
-                  <folding>
-                    <element signature="e#24#37#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="items.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/get_data/get_data/items.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1305">
-                  <caret line="87" column="31" selection-start-line="87" selection-start-column="31" selection-end-line="87" selection-end-column="31" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="daily_data_analyze.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/venv/daily_data_analyze.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="99">
-                  <caret line="61" column="9" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
-                  <folding>
-                    <element signature="e#11#33#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="null/info/daily" pinned="false" current-in-tab="false">
-            <entry file="mongo://null/info/daily">
-              <provider selected="true" editor-type-id="MongoData" />
-            </entry>
-          </file>
-          <file leaf-file-name="analyze_draw.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/analyze_draw.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-19">
-                  <caret line="13" column="14" lean-forward="true" selection-end-line="129" selection-end-column="17" />
-                  <folding>
-                    <element signature="e#11#33#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="analyze_draw.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/analyze_draw.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="214">
-                  <caret line="94" column="24" lean-forward="true" selection-start-line="91" selection-start-column="8" selection-end-line="94" selection-end-column="24" />
-                  <folding>
-                    <element signature="e#11#33#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="Germany.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/get_data/get_data/spiders/Germany.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="311">
+              <caret line="35" column="45" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="45" />
+              <folding>
+                <element signature="e#24#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="daily.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/get_data/get_data/spiders/daily.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="123">
+              <caret line="21" column="72" selection-start-line="21" selection-start-column="72" selection-end-line="21" selection-end-column="72" />
+              <folding>
+                <element signature="e#24#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="items.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/get_data/get_data/items.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1305">
+              <caret line="87" column="31" selection-start-line="87" selection-start-column="31" selection-end-line="87" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="daily_data_analyze.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/venv/daily_data_analyze.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="99">
+              <caret line="61" column="9" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
+              <folding>
+                <element signature="e#11#33#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="null/info/daily" pinned="false" current-in-tab="false">
+        <entry file="mongo://null/info/daily">
+          <provider selected="true" editor-type-id="MongoData" />
+        </entry>
+      </file>
+      <file leaf-file-name="analyze_draw.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/analyze_draw.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-19">
+              <caret line="13" column="14" lean-forward="true" selection-end-line="129" selection-end-column="17" />
+              <folding>
+                <element signature="e#11#33#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
