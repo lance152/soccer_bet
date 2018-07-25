@@ -18,7 +18,7 @@ class GetDataPipeline(object):
 
     def process_item(self, item, spider):
 
-        if item['peilv_win_final_Bet365'] != 0:
+        if item['peilv_win_final_Bet365'] != 0 and item['hscore'] >= 0 and item['gscore'] >= 0:
             postItem = dict(item)
             self.coll.insert(postItem)  # 向数据库插入一条记录
 

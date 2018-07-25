@@ -5,26 +5,20 @@ import json
 from get_data.items import getCoarseData
 from get_data.spiders.processData import get_inside
 
-class DenmarkSpider(scrapy.Spider):
-    name = 'Denmark'
+class SwedenSpider(scrapy.Spider):
+    name = 'England'
     allowed_domains = ['500.com']
 
-    saiji_list = [11744, 9859, 8747, 7499, 6917, 6126, 5437, 4841, 4049, 3294, 2668, 991, 829, 653, 364, 237, 539, 323]
+    saiji_list = [11734, 9848, 8658, 7471, 6832, 6118, 5428, 4794, 4030, 3270, 2573, 967, 823, 649, 150, 193, 86, 99]
+
     saiji_name = ['1718', '1617', '1516', '1415', '1314', '1213', '1112', '1011', '0910', '0809', '0708', '0607', '0506', '0405', '0304', '0203', '0102', '0001']
 
     def start_requests(self):
         for saiji in self.saiji_list:
-            if saiji > 9000:
-                for round in range(1,27):
-                    url = 'http://liansai.500.com/index.php?c=score&a=getmatch&stid={}&round={}'.format(saiji,round)
+            for round in range(1,39):
+                url = 'http://liansai.500.com/index.php?c=score&a=getmatch&stid={}&round={}'.format(saiji,round)
 
-                    yield Request(url=url,callback=self.parse,meta={'saiji':self.saiji_name[self.saiji_list.index(saiji)]})
-            else:
-                for round in range(1, 34):
-                    url = 'http://liansai.500.com/index.php?c=score&a=getmatch&stid={}&round={}'.format(saiji, round)
-
-                    yield Request(url=url, callback=self.parse,
-                                  meta={'saiji': self.saiji_name[self.saiji_list.index(saiji)]})
+                yield Request(url=url,callback=self.parse,meta={'saiji':self.saiji_name[self.saiji_list.index(saiji)]})
 
     def parse(self, response):
         data = json.loads(response.text)
@@ -58,4 +52,3 @@ class DenmarkSpider(scrapy.Spider):
         get_inside('peilv', company_list, response, item)
 
         return item
-

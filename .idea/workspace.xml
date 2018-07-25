@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be45de6a-c485-4034-9983-49b9601d2e60" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/get_data/get_data/spiders/get_saiji.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analyze_data/Brazil/analyze_draw.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/check_data_corret.py" beforeDir="false" afterPath="$PROJECT_DIR$/check_data_corret.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_data/get_data/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_data/get_data/items.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/get_data/get_data/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_data/get_data/pipelines.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_data/get_data/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_data/get_data/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_data/get_data/spiders/Germany.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_data/get_data/spiders/Germany.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_data/get_data/spiders/daily.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_data/get_data/spiders/daily.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/get_data/get_data/spiders/Denmark.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_data/get_data/spiders/Denmark.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/get_data/get_data/spiders/get_saiji.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_data/get_data/spiders/get_saiji.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,10 +21,11 @@
     <SUITE FILE_PATH="coverage/soccer_bet$get_data_Germany.coverage" NAME="get_data_Germany Coverage Results" MODIFIED="1531950734226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/soccer_bet$analyze_win.coverage" NAME="analyze_win Coverage Results" MODIFIED="1531954409447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/soccer_bet$daily_data_analyze.coverage" NAME="daily_data_analyze Coverage Results" MODIFIED="1532379488894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
-    <SUITE FILE_PATH="coverage/soccer_bet$get_saiji.coverage" NAME="get_saiji Coverage Results" MODIFIED="1532473235674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/get_data/get_data/spiders" />
+    <SUITE FILE_PATH="coverage/soccer_bet$get_saiji.coverage" NAME="get_saiji Coverage Results" MODIFIED="1532553917434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/get_data/get_data/spiders" />
     <SUITE FILE_PATH="coverage/soccer_bet$analyze_cold.coverage" NAME="analyze_cold Coverage Results" MODIFIED="1532368416685" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/soccer_bet$check_data_corret.coverage" NAME="check_data_corret Coverage Results" MODIFIED="1532472936597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/soccer_bet$daily.coverage" NAME="daily Coverage Results" MODIFIED="1532374381286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/get_data/get_data/spiders" />
+    <SUITE FILE_PATH="coverage/soccer_bet$analyze_draw__1_.coverage" NAME="analyze_draw (1) Coverage Results" MODIFIED="1532556900817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analyze_data/Brazil" />
     <SUITE FILE_PATH="coverage/soccer_bet$bet_Germany.coverage" NAME="bet_Germany Coverage Results" MODIFIED="1531855756825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
@@ -51,8 +49,8 @@
           <file leaf-file-name="get_saiji.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/get_data/get_data/spiders/get_saiji.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="39" column="19" lean-forward="true" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+                <state relative-caret-position="190">
+                  <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
                   <folding>
                     <element signature="e#0#15#0" expanded="true" />
                   </folding>
@@ -60,25 +58,13 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Denmark.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/get_data/get_data/spiders/Denmark.py">
+          <file leaf-file-name="analyze_draw.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/analyze_data/Brazil/analyze_draw.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="540">
-                  <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+                <state relative-caret-position="466">
+                  <caret line="106" column="38" selection-start-line="106" selection-start-column="38" selection-end-line="106" selection-end-column="38" />
                   <folding>
-                    <element signature="e#24#37#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/get_data/get_data/pipelines.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="18" column="41" lean-forward="true" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
-                  <folding>
-                    <element signature="e#193#207#0" expanded="true" />
+                    <element signature="e#0#22#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -88,11 +74,23 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="Sweden.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/get_data/get_data/spiders/Sweden.py">
+          <file leaf-file-name="analyze_draw.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/analyze_data/Germany/analyze_draw.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="350">
-                  <caret line="54" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="54" />
+                <state relative-caret-position="155">
+                  <caret line="120" column="20" lean-forward="true" selection-start-line="120" selection-end-line="121" />
+                  <folding>
+                    <element signature="e#11#33#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Brazil.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/get_data/get_data/spiders/Brazil.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-385">
+                  <caret line="13" column="53" selection-start-line="13" selection-end-line="14" />
                   <folding>
                     <element signature="e#24#37#0" expanded="true" />
                   </folding>
@@ -145,12 +143,15 @@
         <option value="$PROJECT_DIR$/get_data/get_data/settings.py" />
         <option value="$PROJECT_DIR$/get_data/get_data/spiders/daily.py" />
         <option value="$PROJECT_DIR$/get_data/get_data/items.py" />
-        <option value="$PROJECT_DIR$/get_data/get_data/pipelines.py" />
         <option value="$PROJECT_DIR$/get_data/get_data/spiders/Germany.py" />
-        <option value="$PROJECT_DIR$/get_data/get_data/spiders/get_saiji.py" />
         <option value="$PROJECT_DIR$/get_data/get_data/spiders/Sweden.py" />
         <option value="$PROJECT_DIR$/check_data_corret.py" />
+        <option value="$PROJECT_DIR$/get_data/get_data/spiders/England.py" />
+        <option value="$PROJECT_DIR$/get_data/get_data/pipelines.py" />
         <option value="$PROJECT_DIR$/get_data/get_data/spiders/Denmark.py" />
+        <option value="$PROJECT_DIR$/get_data/get_data/spiders/Brazil.py" />
+        <option value="$PROJECT_DIR$/get_data/get_data/spiders/get_saiji.py" />
+        <option value="$PROJECT_DIR$/analyze_data/Brazil/analyze_draw.py" />
       </list>
     </option>
   </component>
@@ -186,6 +187,12 @@
               <item name="soccer_bet" type="b2602c69:ProjectViewProjectNode" />
               <item name="soccer_bet" type="462c0819:PsiDirectoryNode" />
               <item name="analyze_data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="soccer_bet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="soccer_bet" type="462c0819:PsiDirectoryNode" />
+              <item name="analyze_data" type="462c0819:PsiDirectoryNode" />
+              <item name="Brazil" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="soccer_bet" type="b2602c69:ProjectViewProjectNode" />
@@ -247,7 +254,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.get_saiji">
+  <component name="RunManager" selected="Python.analyze_draw (1)">
     <configuration name="Germany" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="soccer_bet" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -267,7 +274,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="analyze_draw" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="analyze_draw (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="soccer_bet" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -275,12 +282,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/analyze_data/Brazil" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/analyze_draw.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/analyze_data/Brazil/analyze_draw.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -344,19 +351,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.analyze_draw" />
       <item itemvalue="Python.daily_data_analyze" />
       <item itemvalue="Python.get_saiji" />
       <item itemvalue="Python.Germany" />
       <item itemvalue="Python.check_data_corret" />
+      <item itemvalue="Python.analyze_draw (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.analyze_draw (1)" />
         <item itemvalue="Python.get_saiji" />
         <item itemvalue="Python.check_data_corret" />
         <item itemvalue="Python.Germany" />
         <item itemvalue="Python.daily_data_analyze" />
-        <item itemvalue="Python.analyze_draw" />
       </list>
     </recent_temporary>
   </component>
@@ -442,7 +449,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -599,15 +606,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/get_data_England.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-249">
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/get_data_France.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-196">
@@ -616,9 +614,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/analyze_data/Germany/analyze_draw.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/get_data/get_data/spiders/daily.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -647,42 +642,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/get_data/get_data/pipelines.py">
+    <entry file="file://$PROJECT_DIR$/get_data_England.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="41" lean-forward="true" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+        <state>
           <folding>
-            <element signature="e#193#207#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/get_data/get_data/spiders/get_saiji.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="39" column="19" lean-forward="true" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/get_data/get_data/spiders/Sweden.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="54" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="54" />
+        <state relative-caret-position="200">
+          <caret line="44" column="22" lean-forward="true" selection-end-line="54" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/get_data/get_data/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="20" column="94" selection-start-line="20" selection-start-column="94" selection-end-line="20" selection-end-column="94" />
+          <folding>
+            <element signature="e#193#207#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/get_data/get_data/spiders/Denmark.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="253">
+          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_data/get_data/spiders/England.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_data/get_data/spiders/get_saiji.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_data/get_data/spiders/Brazil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-385">
+          <caret line="13" column="53" selection-start-line="13" selection-end-line="14" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/analyze_data/Germany/analyze_draw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="120" column="20" lean-forward="true" selection-start-line="120" selection-end-line="121" />
+          <folding>
+            <element signature="e#11#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/analyze_data/Brazil/analyze_draw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="106" column="38" selection-start-line="106" selection-start-column="38" selection-end-line="106" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
           </folding>
         </state>
       </provider>

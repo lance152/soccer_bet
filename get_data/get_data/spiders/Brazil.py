@@ -5,26 +5,20 @@ import json
 from get_data.items import getCoarseData
 from get_data.spiders.processData import get_inside
 
-class DenmarkSpider(scrapy.Spider):
-    name = 'Denmark'
+class SwedenSpider(scrapy.Spider):
+    name = 'Brazil'
     allowed_domains = ['500.com']
 
-    saiji_list = [11744, 9859, 8747, 7499, 6917, 6126, 5437, 4841, 4049, 3294, 2668, 991, 829, 653, 364, 237, 539, 323]
-    saiji_name = ['1718', '1617', '1516', '1415', '1314', '1213', '1112', '1011', '0910', '0809', '0708', '0607', '0506', '0405', '0304', '0203', '0102', '0001']
+    saiji_list = [11455, 9594, 8333, 7348, 6744, 6025, 5287, 4626, 3914, 3214, 2355, 925]
+
+    saiji_name = ['17', '16', '15', '14', '13', '12', '11', '10', '09', '08', '07', '06']
 
     def start_requests(self):
         for saiji in self.saiji_list:
-            if saiji > 9000:
-                for round in range(1,27):
-                    url = 'http://liansai.500.com/index.php?c=score&a=getmatch&stid={}&round={}'.format(saiji,round)
+            for round in range(1,39):
+                url = 'http://liansai.500.com/index.php?c=score&a=getmatch&stid={}&round={}'.format(saiji,round)
 
-                    yield Request(url=url,callback=self.parse,meta={'saiji':self.saiji_name[self.saiji_list.index(saiji)]})
-            else:
-                for round in range(1, 34):
-                    url = 'http://liansai.500.com/index.php?c=score&a=getmatch&stid={}&round={}'.format(saiji, round)
-
-                    yield Request(url=url, callback=self.parse,
-                                  meta={'saiji': self.saiji_name[self.saiji_list.index(saiji)]})
+                yield Request(url=url,callback=self.parse,meta={'saiji':self.saiji_name[self.saiji_list.index(saiji)]})
 
     def parse(self, response):
         data = json.loads(response.text)
@@ -36,8 +30,12 @@ class DenmarkSpider(scrapy.Spider):
             info = {}
             info['round'] = int(i['round'])
             info['saiji'] = response.meta['saiji']
-            info['hscore'] = int(i['hscore'])
-            info['gscore'] = int(i['gscore'])
+            if i['hscore'] and i['gscore']:
+                info['hscore'] = int(i['hscore'])
+                info['gscore'] = int(i['gscore'])
+            else:
+                info['hscore'] = -1
+                info['gscore'] = -1
             info['hname'] = i['hname']
             info['gname'] = i['gname']
             info['fid'] = id
@@ -58,4 +56,3 @@ class DenmarkSpider(scrapy.Spider):
         get_inside('peilv', company_list, response, item)
 
         return item
-
